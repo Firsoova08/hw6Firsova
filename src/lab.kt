@@ -27,5 +27,15 @@ fun main(){
     println("Может кастовать ${fireball.name}: ${hero2.canCast(fireball)}")
     println("Может кастовать ${lightning.name}: ${hero2.canCast(lightning)}")
 
+    //4
+    val goblin = Enemy("Гоблин", 50)
+    val orc = Enemy("Орк", 100, 3)
+    goblin.printEnemyInfo()
+    orc.printEnemyInfo()
+    goblin.takeDamage(20)
+    orc.takeDamage(50)
+
+
+
 
 }

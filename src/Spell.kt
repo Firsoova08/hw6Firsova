@@ -22,4 +22,5 @@ class Hero(
     fun showStats() {
         println("Герой: $name, Уровень: $level, Здоровье: $hp")
     }
+
 }
