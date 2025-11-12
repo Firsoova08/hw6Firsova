@@ -10,4 +10,22 @@ fun main(){
     val village = Location("Тихая деревня", "Низкий", 1)
     println("${forest.name}: ${forest.isDangerous()}")
     println("${village.name}: ${village.isDangerous()}")
+
+    //3
+    val hero1 = Hero("Дракон", 6)
+    val hero2 = Hero("Вампир", 2)
+
+    val fireball = Spell("Огненный шар", 3, 3)
+    val lightning = Spell("Ледяная стрела", 4, 6,)
+
+
+    hero1.showStats()
+    println("Может кастовать ${fireball.name}: ${hero1.canCast(fireball)}")
+    println("Может кастовать ${lightning.name}: ${hero1.canCast(lightning)}")
+
+    hero2.showStats()
+    println("Может кастовать ${fireball.name}: ${hero2.canCast(fireball)}")
+    println("Может кастовать ${lightning.name}: ${hero2.canCast(lightning)}")
+
+
 }
